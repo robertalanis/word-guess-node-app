@@ -18,5 +18,7 @@ var Letter = function(character){
     }
 }
 
+console.log("Test: Letter.js")
+
 // exporting our Letter constructor
 module.exports = Letter;
