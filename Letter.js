@@ -10,9 +10,9 @@ var Letter = function(character){
         //Returns a placeholder (underscore) if the letter has not been guessed
         else {return "_";}
     }
-    this.checkGuess = function (userGuess){
+    this.checkCharacter = function (input){
         //Takes a character as an argument and checks it against the underlying character
-        if (userGuess === this.letter) 
+        if (input === this.letter) 
         //Updates the stored boolean value to true if it was guessed correctly
         {this.guessed = true;}
     }

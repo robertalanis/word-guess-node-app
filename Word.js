@@ -1,11 +1,6 @@
 // requiring our Letter module exported from Letter.js
 var Letter = require("./Letter");
 
-
-//A function that takes a character as an argument and calls the guess function on each letter object (the second function defined in Letter.js)
-
-
-
 // Constructor for words
 function Word(answer){
     //An array of new Letter objects representing the letters of the underlying word
@@ -21,26 +16,35 @@ function Word(answer){
     //that displays the character or an underscore and concatenate those together.
     this.displayString = function () {
         this.displayArray = []
-        for (let index = 0; index < answer.length; index++) {
-            this.displayArray.push(this.letterObjectArray[index].toString());
+        for (let i = 0; i < answer.length; i++) {
+            this.displayArray.push(this.letterObjectArray[i].toString());
         }
         return this.displayArray.join(" ");
+    }
+    //A function that takes a character as an argument 
+    // and calls the guess function on each letter object (the second function defined in Letter.js)
+    this.checkGuess = function (input) {
+        for (let j = 0; j < array.length; j++) {
+            country.letterObjectArray[j].checkCharacter(input);
+        }
     }
     
 }
 
-
-
+//Testing letterObjectArray
 var country = new Word("argentina");
 console.log(country.letterObjectArray);
 country.wordToArray();
 console.log(country.letterObjectArray);
 
+//Testing displayString function
 console.log(country.letterObjectArray[0].toString());
-country.displayString();
+console.log(country.displayString());
 
-console.log("test")
-
+//Testing checkGuess function
+console.log(country.letterObjectArray[0].guessed);
+country.letterObjectArray[0].checkCharacter("a");
+console.log(country.letterObjectArray[0].guessed);
 
 // exporting our Letter constructor
 module.exports = Word;
