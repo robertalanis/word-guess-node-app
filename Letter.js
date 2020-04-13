@@ -26,7 +26,8 @@ var Letter = function(character){
 //console.log(p.guessed);
 //console.log("X" +p.toString()+ "X")
 
-// exporting our Letter constructor
-module.exports = Letter;
+console.log("Connected: Letter.js")
 
+// exporting our Letter constructor
+module.exports = Letter; 
 
