@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/robertalanis/word-guess-node-app#readme",
   "dependencies": {
+    "clear": "^0.1.0",
     "cli-table3": "^0.6.0",
     "inquirer": "^7.1.0"
   }

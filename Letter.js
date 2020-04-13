@@ -18,16 +18,6 @@ var Letter = function(character){
     }
 }
 
-//var p = new Letter("p")
-//console.log(p.letter);
-//console.log(p.guessed);
-//console.log("X" +p.toString()+ "X")
-//p.checkGuess("p")
-//console.log(p.guessed);
-//console.log("X" +p.toString()+ "X")
-
-console.log("Connected: Letter.js")
-
 // exporting our Letter constructor
 module.exports = Letter; 
 
