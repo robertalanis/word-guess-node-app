@@ -65,11 +65,19 @@ function newGame() {
 
   //Function to check gameplay status
   function checkStatus() {
-    // if there are no underscores the user has won
+    //If there are no underscores the user has won
     if (word.displayString().split("_").length - 1 === 0) {
-      isWinner();
-    } else if (incorrectAttempts === 0) {
-      isLoser();
+      //Congratulate user
+      console.log("Good Job! You win!");
+      //Ask to play again
+      playAgain();
+    } 
+    //If the user runs out of guesses
+    else if (incorrectAttempts === 0) {
+        //Give correct answer
+        console.log("Sorry! You lost! The correct answer was " + answer);
+        //Ask to play again
+        playAgain();
     } else {
       makeGuess();
     }
@@ -86,39 +94,38 @@ function newGame() {
         },
       ])
       .then((answers) => {
+        //Records number of underscores before the guess is checked
         var before = word.displayString().split("_").length - 1;
+        //Takes input as an argument for our checkGuess function from our Word constructor
         word.checkGuess(answers.guess);
+        //Records number of underscores after the guess has been checked
         var after = word.displayString().split("_").length - 1;
+        //Clear the console
         clear();
+        //Update the display
         display();
+        //If the number of underscores is the same the user was incorrect
         if (before === after) {
-          incorrectAttempts--;
+          //Alert the user they made an incorrect guess
           console.log(chalk.red("incorrect"));
+          //Decrement incorrect attempts
+          incorrectAttempts--;
+          //Alert the user the number of guesses remaining
           console.log(
             chalk.red(
               "you have " + incorrectAttempts + " incorrect attempts left!"
             )
           );
+        //If the number of underscores changes the user guessed correctly
         } else {
+          //Alert user they made a correct guess
           console.log(chalk.green("correct"));
         }
+        //Check status to see if user has won, lost, or still has guesses remaining
         checkStatus();
       });
   }
-  //If user wins
-  function isWinner() {
-    //Congratulate user
-    console.log("Good Job! You win!");
-    //Ask to play again
-    playAgain();
-  }
-  //If user loses
-  function isLoser() {
-    //Give correct answer
-    console.log("Sorry! You lost! The correct answer was " + answer);
-    //Ask to play again
-    playAgain();
-  }
+
 }
 //Gives user option to play another game
 function playAgain() {
