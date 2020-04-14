@@ -1,0 +1,302 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/robertalanis/word-guess-node-app
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 80
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 24
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: solid
+    title: null
+    style:
+      boxShadow: none
+      margin: 0px
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 7
+    content: "bash: /Users/robertalanis/.bashrc: No such file or directory\r\n\r\nThe default interactive shell is now zsh.\r\nTo update your account to use zsh, please run `chsh -s /bin/zsh`.\r\nFor more details, please visit https://support.apple.com/kb/HT208050.\r\n\e]7;file://Roberts-MBP.lan1/Users/robertalanis/word-guess-node-app\a"
+  - delay: 18
+    content: "\e[?1034h\U0001F335 \e[01;37m -- robertalanis@Roberts-MBP -- \e[01;32m(master) \e[01;36m/Users/robertalanis/word-guess-node-app \e[01;34m  \r\r\n> \e[0m"
+  - delay: 490
+    content: 'n'
+  - delay: 134
+    content: o
+  - delay: 172
+    content: d
+  - delay: 227
+    content: e
+  - delay: 546
+    content: ' '
+  - delay: 174
+    content: i
+  - delay: 89
+    content: 'n'
+  - delay: 181
+    content: d
+  - delay: 191
+    content: e
+  - delay: 210
+    content: x
+  - delay: 195
+    content: .
+  - delay: 322
+    content: j
+  - delay: 137
+    content: s
+  - delay: 172
+    content: "\r\n"
+  - delay: 278
+    content: "\e[2J\e[0f\r\n\r\n"
+  - delay: 11
+    content: "\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m               _ _ _ _ _ _               \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n"
+  - delay: 8
+    content: "\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 2132
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mp\e[20D\e[20C"
+  - delay: 468
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mp\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m               _ _ _ _ _ _               \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[31mincorrect\e[39m\r\n\e[31myou have 6 incorrect attempts left!\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 3822
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mr\e[20D\e[20C"
+  - delay: 778
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mr\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m               _ r _ _ _ _               \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 2641
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0my\e[20D\e[20C"
+  - delay: 436
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36my\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m               _ r _ _ _ _               \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[31mincorrect\e[39m\r\n\e[31myou have 5 incorrect attempts left!\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 2919
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mb\e[20D\e[20C"
+  - delay: 371
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mb\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m               b r _ _ _ _               \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 1022
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mz\e[20D\e[20C"
+  - delay: 232
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mz\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m               b r _ z _ _               \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 572
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mi\e[20D\e[20C"
+  - delay: 427
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mi\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m               b r _ z i _               \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 1106
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0ml\e[20D\e[20C"
+  - delay: 259
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36ml\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m               b r _ z i l               \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 1433
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0ma\e[20D\e[20C"
+  - delay: 460
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36ma\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m               b r a z i l               \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[90m┌────────────────────┐\e[39m\r\n\e[90m│\e[39m \e[36mGood Job! You win!\e[39m \e[90m│\e[39m\r\n\e[90m└────────────────────┘\e[39m\r\n\e[?25l\e[32m?\e[39m \e[1mWould you like to play again?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ yes\e[39m \r\n  no \e[5D\e[5C"
+  - delay: 1291
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWould you like to play again?\e[22m\e[0m \e[0m\e[36myes\e[39m\e[35D\e[35C\r\n\e[?25h\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            _ _ _ _ _ _ _ _ _            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 1172
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mh\e[20D\e[20C"
+  - delay: 228
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mh\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            _ _ _ _ _ _ _ _ _            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[31mincorrect\e[39m\r\n\e[31myou have 6 incorrect attempts left!\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 1087
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mg\e[20D\e[20C"
+  - delay: 187
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mg\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            _ _ g _ _ _ _ _ _            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 1192
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0ma\e[20D\e[20C"
+  - delay: 175
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36ma\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            a _ g _ _ _ _ _ a            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 1821
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mt\e[20D\e[20C"
+  - delay: 157
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mt\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            a _ g _ _ t _ _ a            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 918
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mi\e[20D\e[20C"
+  - delay: 250
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mi\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            a _ g _ _ t i _ a            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 898
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mn\e[20D\e[20C"
+  - delay: 248
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mn\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            a _ g _ n t i n a            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 768
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mr\e[20D\e[20C"
+  - delay: 251
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mr\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            a r g _ n t i n a            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 514
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0me\e[20D\e[20C"
+  - delay: 202
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36me\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            a r g e n t i n a            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[90m┌────────────────────┐\e[39m\r\n\e[90m│\e[39m \e[36mGood Job! You win!\e[39m \e[90m│\e[39m\r\n\e[90m└────────────────────┘\e[39m\r\n\e[?25l\e[32m?\e[39m \e[1mWould you like to play again?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ yes\e[39m \r\n  no \e[5D\e[5C"
+  - delay: 1885
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWould you like to play again?\e[22m\e[0m \e[0m\e[36myes\e[39m\e[35D\e[35C\r\n\e[?25h\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            _ _ _ _ _ _ _ _ _            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 2258
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mg\e[20D\e[20C"
+  - delay: 277
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mg\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            _ _ _ _ _ _ g _ _            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 1087
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0ma\e[20D\e[20C"
+  - delay: 273
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36ma\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            _ _ _ a _ a g _ a            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 1091
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mr\e[20D\e[20C"
+  - delay: 417
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mr\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            _ _ _ a r a g _ a            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 5137
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mv\e[20D\e[20C"
+  - delay: 480
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mv\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            _ _ _ a r a g _ a            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[31mincorrect\e[39m\r\n\e[31myou have 6 incorrect attempts left!\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 736
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0ms\e[20D\e[20C"
+  - delay: 317
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36ms\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            _ _ _ a r a g _ a            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[31mincorrect\e[39m\r\n\e[31myou have 5 incorrect attempts left!\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 2036
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mp\e[20D\e[20C"
+  - delay: 270
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mp\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            _ _ _ a r a g _ a            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[31mincorrect\e[39m\r\n\e[31myou have 4 incorrect attempts left!\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 953
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mm\e[20D\e[20C"
+  - delay: 224
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mm\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            _ _ _ a r a g _ a            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[31mincorrect\e[39m\r\n\e[31myou have 3 incorrect attempts left!\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 1095
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0ml\e[20D\e[20C"
+  - delay: 206
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36ml\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            _ _ _ a r a g _ a            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[31mincorrect\e[39m\r\n\e[31myou have 2 incorrect attempts left!\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 2370
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0me\e[20D\e[20C"
+  - delay: 299
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36me\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            _ _ _ a r a g _ a            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[31mincorrect\e[39m\r\n\e[31myou have 1 incorrect attempts left!\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 2880
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mn\e[20D\e[20C"
+  - delay: 188
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mn\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            n _ _ a r a g _ a            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 3181
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mu\e[20D\e[20C"
+  - delay: 195
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mu\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            n _ _ a r a g u a            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 3300
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mk\e[20D\e[20C"
+  - delay: 193
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mk\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m            n _ _ a r a g u a            \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[31mincorrect\e[39m\r\n\e[31myou have 0 incorrect attempts left!\e[39m\r\n\e[90m┌───────────────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m \e[36mSorry! You lost! The correct answer was \e[35mnicaragua\e[39m\e[36m\e[39m \e[90m│\e[39m\r\n\e[90m└───────────────────────────────────────────────────┘\e[39m\r\n\e[?25l\e[32m?\e[39m \e[1mWould you like to play again?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ yes\e[39m \r\n  no \e[5D\e[5C"
+  - delay: 1897
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWould you like to play again?\e[22m\e[0m \e[0m\e[36myes\e[39m\e[35D\e[35C\r\n\e[?25h\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m                 _ _ _ _                 \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 1080
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mp\e[20D\e[20C"
+  - delay: 247
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mp\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m                 _ _ _ _                 \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[31mincorrect\e[39m\r\n\e[31myou have 6 incorrect attempts left!\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 826
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mc\e[20D\e[20C"
+  - delay: 350
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mc\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m                 c _ _ _                 \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 1316
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mb\e[20D\e[20C"
+  - delay: 180
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mb\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m                 c _ b _                 \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 1422
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0ma\e[20D\e[20C"
+  - delay: 292
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36ma\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m                 c _ b a                 \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[19D\e[19C"
+  - delay: 490
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0mu\e[20D\e[20C"
+  - delay: 386
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mGuess a letter: \e[22m\e[0m \e[0m\e[36mu\e[39m\e[20D\e[20C\r\n\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────────────────────────┐\e[39m\r\n\e[90m│\e[39m Guess the Latin American country below: \e[90m│\e[39m\r\n\e[90m├─────────────────────────────────────────┤\e[39m\r\n\e[90m│\e[39m                 c u b a                 \e[90m│\e[39m\r\n\e[90m└─────────────────────────────────────────┘\e[39m\r\n\e[32mcorrect\e[39m\r\n\e[90m┌────────────────────┐\e[39m\r\n\e[90m│\e[39m \e[36mGood Job! You win!\e[39m \e[90m│\e[39m\r\n\e[90m└────────────────────┘\e[39m\r\n\e[?25l\e[32m?\e[39m \e[1mWould you like to play again?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ yes\e[39m \r\n  no \e[5D\e[5C"
+  - delay: 1152
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWould you like to play again?\e[22m\e[0m \e[0m\r\n  yes \r\n\e[36m❯ no\e[39m \e[5D\e[5C"
+  - delay: 879
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWould you like to play again?\e[22m\e[0m \e[0m\e[36mno\e[39m\e[34D\e[34C\r\n\e[?25h\e[2J\e[0f\r\n\r\n\e[90m┌─────────────────────┐\e[39m\r\n\e[90m│\e[39m \e[36mThanks for playing!\e[39m \e[90m│\e[39m\r\n\e[90m└─────────────────────┘\e[39m\r\n\e[?25h"
+  - delay: 11
+    content: "\e]7;file://Roberts-MBP.lan1/Users/robertalanis/word-guess-node-app\a"
+  - delay: 37
+    content: "\U0001F335 \e[01;37m -- robertalanis@Roberts-MBP -- \e[01;32m(master) \e[01;36m/Users/robertalanis/word-guess-node-app \e[01;34m  \r\r\n> \e[0m"
+  - delay: 2358
+    content: " "
+
+

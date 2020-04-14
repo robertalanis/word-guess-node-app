@@ -38,10 +38,8 @@ function newGame() {
   //Create an array of new Letter objects representing the letters of the underlying word
   word.wordToArray();
 
-  let inputArray = [];
-
   //Set incorrect guess limit
-  let incorrectAttempts = 5;
+  let incorrectAttempts = 7;
 
   //Call our display function
   display();
@@ -68,16 +66,30 @@ function newGame() {
     //If there are no underscores the user has won
     if (word.displayString().split("_").length - 1 === 0) {
       //Congratulate user
-      console.log("Good Job! You win!");
+      var winnerTable = new Table({ wordWrap: true });
+      winnerTable.push([
+        {
+          hAlign: "center",
+          content: chalk.cyan("Good Job! You win!"),
+        },
+      ]);
+      console.log(winnerTable.toString());
       //Ask to play again
       playAgain();
-    } 
+    }
     //If the user runs out of guesses
     else if (incorrectAttempts === 0) {
-        //Give correct answer
-        console.log("Sorry! You lost! The correct answer was " + answer);
-        //Ask to play again
-        playAgain();
+      //Give correct answer
+      var loserTable = new Table({ wordWrap: true });
+      loserTable.push([
+        {
+          hAlign: "center",
+          content: chalk.cyan("Sorry! You lost! The correct answer was " + chalk.magenta(answer)),
+        },
+      ]);
+      console.log(loserTable.toString());
+      //Ask to play again
+      playAgain();
     } else {
       makeGuess();
     }
@@ -91,6 +103,10 @@ function newGame() {
           type: "input",
           name: "guess",
           message: "Guess a letter: ",
+          //validate against an empty string
+          validate: function noEmptyStrings(input) {
+            return input !== "";
+          },
         },
       ])
       .then((answers) => {
@@ -116,7 +132,7 @@ function newGame() {
               "you have " + incorrectAttempts + " incorrect attempts left!"
             )
           );
-        //If the number of underscores changes the user guessed correctly
+          //If the number of underscores changes the user guessed correctly
         } else {
           //Alert user they made a correct guess
           console.log(chalk.green("correct"));
@@ -125,8 +141,8 @@ function newGame() {
         checkStatus();
       });
   }
-
 }
+
 //Gives user option to play another game
 function playAgain() {
   inquirer
@@ -142,7 +158,7 @@ function playAgain() {
       //Starts new game
       if (answers.response === "yes") {
         newGame();
-      //Ends game  
+        //Ends game
       } else {
         //Clear console
         clear();
