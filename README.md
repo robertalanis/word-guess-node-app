@@ -2,6 +2,10 @@
 
 This is Word Guess command-line game using constructor functions.
 
+### Demo
+
+![Word Guess CLI Demo](demo.gif)
+
 ### Overview
 
 This game makes use of three main files:
@@ -26,11 +30,8 @@ In order to accomplish this my constructor defines:
 * **index.js**: The file containing the logic for the the actual game, which depends on `Word.js` and:
 
   * Randomly selects a word and uses the `Word` constructor to store it
-  * Prompts the user for each guess and keeps track of the user's remaining guesses
-
-### Demo
-
-![Word Guess CLI Demo](demo.gif)
+  * Prompts the user for each guess and keeps track of the user's remaining guesses and letters that have been guessed
+  * Also validates user input to only allow a-z letters that have not been guessed.
 
 ### Technologies Utilized
 
@@ -56,6 +57,4 @@ In order to accomplish this my constructor defines:
 This game was a lot of fun to make and there are a few ideas I have for building on to it:
 
 * Even though the theme was Latin American countries I had to omit `Costa Rica`, `Dominican Republic`, and `El Salvador` becuase `Letter.js` only allows for words with out spaces.
-* I am not validating user input, so a user can enter characters that are not part of the alphabet, empty strings, or more than one character.
-* I would like to display the characters that have already been guessed and validate against entering those again.
 * Finally, I would like to provide a fun fact about the country after each round ends.
