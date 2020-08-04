@@ -50,7 +50,7 @@ In order to accomplish this my constructor defines:
 1. Clone repo
 1. Open your terminal and navigate to the folder that contains the file `index.js`
 1. Run `npm install` to install the required dependencies
-1. Run `node liri.js` and you should be able to play the game following the inquirer prompts
+1. Run `node index.js` and you should be able to play the game following the inquirer prompts
 
 ### Notes
 
