@@ -4,7 +4,7 @@ This is Word Guess command-line game using constructor functions.
 
 ### Demo
 
-![Word Guess CLI Demo](demo.gif)
+![Word Guess CLI Demo](/gif/demo.gif)
 
 ### Overview
 
