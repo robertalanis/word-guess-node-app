@@ -1,9 +1,15 @@
-const Word = require("./Word");
+import Word from "./Word.js"
 
-const inquirer = require("inquirer");
-const Table = require("cli-table3");
-const chalk = require("chalk");
-const clear = require("clear");
+import inquirer from "inquirer";
+import Table from "cli-table3";
+import chalk from "chalk";
+import clear from "clear";
+
+
+//const inquirer = require("inquirer");
+//const Table = require("cli-table3");
+//const chalk = require("chalk");
+//const clear = require("clear");
 
 const wordBank = [
 	"argentina",
@@ -11,11 +17,11 @@ const wordBank = [
 	"brazil",
 	"chile",
 	"colombia",
-	//'costa rica',
+	'costa rica',
 	"cuba",
-	//'dominican republic',
+	'dominican republic',
 	"ecuador",
-	//'el salvador',
+	'el salvador',
 	"guatemala",
 	"honduras",
 	"mexico",
@@ -24,7 +30,7 @@ const wordBank = [
 	"paraguay",
 	"peru",
 	"uruguay",
-	"venezuela",
+	"venezuela"
 ];
 
 //Starts game
